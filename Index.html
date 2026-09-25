@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nova-Indumentaria | Ropa urbana</title>
+
+    <meta
+      name="description"
+      content="Nova-Indumentaria - Ropa urbana y streetwear. Descubrí nuestra nueva colección."
+    />
+
+    <meta
+      name="keywords"
+      content="ropa urbana, streetwear, indumentaria, moda, Nova-Indumentaria"
+    />
+
+    <meta name="author" content="Nova-Indumentaria" />
+
+    <link rel="icon" href="img/logo.png" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+      <div class="nav-contenedor">
+        <a href="#inicio" class="logo-link">
+          <img src="img/logo.png" alt="Nova-Indumentaria" class="logo" />
+        </a>
+
+        <nav class="nav-links">
+          <a href="#inicio"> Inicio </a>
+
+          <a href="#productos"> Productos </a>
+
+          <a href="#nosotros"> Nosotros </a>
+
+          <a href="#contacto"> Contacto </a>
+        </nav>
+
+        <button class="carrito" id="boton-carrito" aria-label="Abrir carrito">
+          🛒
+
+          <span id="contador-carrito"> 0 </span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- =========================
+             HERO
+        ========================== -->
+
+      <section class="hero" id="inicio">
+        <div class="hero-contenido">
+          <p class="hero-etiqueta">NUEVA COLECCIÓN 2026</p>
+
+          <h1>
+            Tu estilo.<br />
+            Tu momento.
+          </h1>
+
+          <p>
+            Prendas urbanas pensadas para acompañar tu estilo todos los días.
+          </p>
+
+          <a href="#productos" class="boton"> Ver colección </a>
+        </div>
+      </section>
+
+      <!-- =========================
+             CATEGORÍAS
+        ========================== -->
+
+      <section class="categorias">
+        <div class="seccion-titulo">
+          <p>DESCUBRÍ</p>
+
+          <h2>Categorías</h2>
+        </div>
+
+        <div class="categorias-grid">
+          <a href="#productos" class="categoria" data-categoria="remeras">
+            <span> 01 </span>
+
+            <h3>REMERAS</h3>
+
+            <p>Ver colección →</p>
+          </a>
+
+          <a href="#productos" class="categoria" data-categoria="pantalones">
+            <span> 02 </span>
+
+            <h3>PANTALONES</h3>
+
+            <p>Ver colección →</p>
+          </a>
+
+          <a href="#productos" class="categoria" data-categoria="buzos">
+            <span> 03 </span>
+
+            <h3>BUZOS</h3>
+
+            <p>Ver colección →</p>
+          </a>
+
+          <a href="#productos" class="categoria" data-categoria="camperas">
+            <span> 04 </span>
+
+            <h3>CAMPERAS</h3>
+
+            <p>Ver colección →</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- =========================
+             PRODUCTOS
+        ========================== -->
+
+      <section class="productos" id="productos">
+        <div class="seccion-titulo">
+          <p>NUESTRA COLECCIÓN</p>
+
+          <h2>Productos</h2>
+        </div>
+
+        <!-- BUSCADOR -->
+
+        <div class="buscador">
+          <input
+            type="text"
+            id="buscador-productos"
+            placeholder="Buscar productos..."
+          />
+        </div>
+
+        <!-- FILTROS -->
+
+        <div class="filtros">
+          <button class="filtro activo" data-filtro="todos">Todos</button>
+
+          <button class="filtro" data-filtro="remeras">Remeras</button>
+
+          <button class="filtro" data-filtro="buzos">Buzos</button>
+
+          <button class="filtro" data-filtro="pantalones">Pantalones</button>
+
+          <button class="filtro" data-filtro="camperas">Camperas</button>
+        </div>
+
+        <!-- GRID DE PRODUCTOS -->
+
+        <div class="productos-grid">
+          <!-- REMERA -->
+
+          <article class="producto" data-categoria="remeras">
+            <div class="producto-imagen">
+              <img
+                src="img/remera.jpg"
+                alt="Remera Nova Basic"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="producto-info">
+              <span class="producto-categoria"> REMERAS </span>
+
+              <h3>Remera Nova Basic</h3>
+
+              <p class="precio">$25.000</p>
+
+              <div class="opciones-producto">
+                <div class="opcion">
+                  <label for="talle-remera"> Talle </label>
+
+                  <select id="talle-remera" class="select-producto">
+                    <option value="S">S</option>
+
+                    <option value="M" selected>M</option>
+
+                    <option value="L">L</option>
+
+                    <option value="XL">XL</option>
+                  </select>
+                </div>
+
+                <div class="opcion">
+                  <label for="color-remera"> Color </label>
+
+                  <select id="color-remera" class="select-producto">
+                    <option value="Negro">Negro</option>
+
+                    <option value="Blanco">Blanco</option>
+
+                    <option value="Gris">Gris</option>
+                  </select>
+                </div>
+              </div>
+
+              <button class="boton-producto" data-producto="Remera Nova Basic">
+                Consultar
+              </button>
+
+              <button
+                class="boton-carrito"
+                data-producto="Remera Nova Basic"
+                data-precio="25000"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- BUZO -->
+
+          <article class="producto" data-categoria="buzos">
+            <div class="producto-imagen">
+              <img src="img/buzo.jpg" alt="Buzo Nova Oversize" loading="lazy" />
+            </div>
+
+            <div class="producto-info">
+              <span class="producto-categoria"> BUZOS </span>
+
+              <h3>Buzo Nova Oversize</h3>
+
+              <p class="precio">$45.000</p>
+
+              <div class="opciones-producto">
+                <div class="opcion">
+                  <label for="talle-buzo"> Talle </label>
+
+                  <select id="talle-buzo" class="select-producto">
+                    <option value="S">S</option>
+
+                    <option value="M" selected>M</option>
+
+                    <option value="L">L</option>
+
+                    <option value="XL">XL</option>
+                  </select>
+                </div>
+
+                <div class="opcion">
+                  <label for="color-buzo"> Color </label>
+
+                  <select id="color-buzo" class="select-producto">
+                    <option value="Negro">Negro</option>
+
+                    <option value="Gris">Gris</option>
+
+                    <option value="Beige">Beige</option>
+                  </select>
+                </div>
+              </div>
+
+              <button class="boton-producto" data-producto="Buzo Nova Oversize">
+                Consultar
+              </button>
+
+              <button
+                class="boton-carrito"
+                data-producto="Buzo Nova Oversize"
+                data-precio="45000"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- PANTALÓN -->
+
+          <article class="producto" data-categoria="pantalones">
+            <div class="producto-imagen">
+              <img
+                src="img/pantalon.jpg"
+                alt="Pantalón Nova Cargo"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="producto-info">
+              <span class="producto-categoria"> PANTALONES </span>
+
+              <h3>Pantalón Nova Cargo</h3>
+
+              <p class="precio">$50.000</p>
+
+              <div class="opciones-producto">
+                <div class="opcion">
+                  <label for="talle-pantalon"> Talle </label>
+
+                  <select id="talle-pantalon" class="select-producto">
+                    <option value="38">38</option>
+
+                    <option value="40" selected>40</option>
+
+                    <option value="42">42</option>
+
+                    <option value="44">44</option>
+                  </select>
+                </div>
+
+                <div class="opcion">
+                  <label for="color-pantalon"> Color </label>
+
+                  <select id="color-pantalon" class="select-producto">
+                    <option value="Negro">Negro</option>
+
+                    <option value="Gris">Gris</option>
+
+                    <option value="Beige">Beige</option>
+                  </select>
+                </div>
+              </div>
+
+              <button
+                class="boton-producto"
+                data-producto="Pantalón Nova Cargo"
+              >
+                Consultar
+              </button>
+
+              <button
+                class="boton-carrito"
+                data-producto="Pantalón Nova Cargo"
+                data-precio="50000"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+
+          <!-- CAMPERA -->
+
+          <article class="producto" data-categoria="camperas">
+            <div class="producto-imagen">
+              <img
+                src="img/campera.jpg"
+                alt="Campera Nova Street"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="producto-info">
+              <span class="producto-categoria"> CAMPERAS </span>
+
+              <h3>Campera Nova Street</h3>
+
+              <p class="precio">$70.000</p>
+
+              <div class="opciones-producto">
+                <div class="opcion">
+                  <label for="talle-campera"> Talle </label>
+
+                  <select id="talle-campera" class="select-producto">
+                    <option value="S">S</option>
+
+                    <option value="M" selected>M</option>
+
+                    <option value="L">L</option>
+
+                    <option value="XL">XL</option>
+                  </select>
+                </div>
+
+                <div class="opcion">
+                  <label for="color-campera"> Color </label>
+
+                  <select id="color-campera" class="select-producto">
+                    <option value="Negro">Negro</option>
+
+                    <option value="Verde">Verde</option>
+
+                    <option value="Beige">Beige</option>
+                  </select>
+                </div>
+              </div>
+
+              <button
+                class="boton-producto"
+                data-producto="Campera Nova Street"
+              >
+                Consultar
+              </button>
+
+              <button
+                class="boton-carrito"
+                data-producto="Campera Nova Street"
+                data-precio="70000"
+              >
+                Agregar al carrito
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================
+             NOSOTROS
+        ========================== -->
+
+      <section class="nosotros" id="nosotros">
+        <div class="nosotros-contenido">
+          <div class="seccion-titulo">
+            <p>NUESTRA ESENCIA</p>
+
+            <h2>Sobre Nova</h2>
+          </div>
+
+          <p>
+            Nova-Indumentaria nace con una idea simple: crear prendas urbanas
+            que combinen comodidad, identidad y estilo.
+          </p>
+
+          <p>
+            Diseñamos una colección pensada para acompañarte en todos los
+            momentos del día, manteniendo una estética moderna y auténtica.
+          </p>
+        </div>
+      </section>
+
+      <!-- =========================
+             CONTACTO
+        ========================== -->
+
+      <section class="contacto" id="contacto">
+        <div class="contacto-contenido">
+          <p>¿TENÉS ALGUNA CONSULTA?</p>
+
+          <h2>Hablemos.</h2>
+
+          <p>
+            Consultanos por disponibilidad, talles, colores o cualquier otra
+            duda.
+          </p>
+
+          <a href="#" class="boton" id="boton-whatsapp">
+            Consultar por WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+      <div class="footer-contenido">
+        <div>
+          <img src="img/logo.png" alt="Nova-Indumentaria" class="logo-footer" />
+
+          <p>Tu estilo. Tu momento.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#inicio"> Inicio </a>
+
+          <a href="#productos"> Productos </a>
+
+          <a href="#nosotros"> Nosotros </a>
+
+          <a href="#contacto"> Contacto </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Nova-Indumentaria. Todos los derechos reservados.</p>
+
+        <p>Instagram: @nova.indumentaria</p>
+      </div>
+    </footer>
+
+    <!-- =========================
+         CARRITO
+    ========================== -->
+
+    <div class="carrito-panel" id="carrito-panel">
+      <div class="carrito-contenido">
+        <div class="carrito-header">
+          <h2>Tu carrito</h2>
+
+          <button
+            class="cerrar-carrito"
+            id="cerrar-carrito"
+            aria-label="Cerrar carrito"
+          >
+            ×
+          </button>
+        </div>
+
+        <div class="carrito-productos" id="carrito-productos">
+          <p class="carrito-vacio">Tu carrito está vacío.</p>
+        </div>
+
+        <div class="carrito-footer">
+          <div class="carrito-total">
+            <span> Total </span>
+
+            <strong id="carrito-total"> $0 </strong>
+          </div>
+
+          <button class="boton-finalizar" id="boton-finalizar">
+            Finalizar compra
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
